@@ -21,14 +21,14 @@ body {
 .logo-text {
 	display: table-cell;
 	vertical-align: middle;
-	width: 75px;
-	height: 75px;
+	width: 100px;
+	height: 100px;
 	text-align: center;
 	color: #ccff00;
 	border: 5px solid #ccff00;
 	border-radius: 50%;
-	font-size: 18px;
-	line-height: 18px;
+	font-size: 24px;
+	line-height: 24px;
 	font-family: Arial;
 	font-weight: bold;
 }
@@ -42,8 +42,8 @@ body {
 	box-shadow: 0 0 5px 0 white;
 }
 .main-menu {
-	height: 50px;
-	margin: 10px 0;
+	height: 60px;
+	margin: 10px 3px;
 	box-shadow: 0 0 3px 0 white;
 }
 main {
@@ -54,7 +54,7 @@ main {
 }
 .page-chat {
 	width: 320px;
-	margin-left: 10px;
+	margin: 3px 3px 3px 10px;
 	box-shadow: 0 0 3px 0 white;
 }
 .page-footer {
@@ -80,37 +80,47 @@ main {
 
 .slider-inner {
     overflow: hidden;
-	box-shadow: 0 0 3px 0 white;
 }
 
-.slider-slides{
+.slider-slides {
+	display: flex;
     width: 400%;
-    white-space: nowrap;
-    transition: transform 1s ease;
+	-webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
+	transition:         all 1s cubic-bezier(1, 0, 0, 1);
 }
 
 .slider-slides .slide {
-    display: inline-block;
-    float: left;
     width: 670px;
+	margin-right: 10px;
 }
-
+.slide-content {
+	width: 644px;
+	margin: 3px;
+	padding: 10px;
+	white-space: pre-wrap;
+	box-shadow: 0 0 3px 0 white;
+}
 .slider-controls {
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-start;
     width: 100%;
 	position: absolute;
-	top: -50px;
+	top: -60px;
 	right: -10px;
 }
 
 .slider-controls label {
-    display: inline-block;
-    width: 120px;
-    height: 30px;
+	display: flex;
+	align-items: center;
+    width: 150px;
+    height: 40px;
     background: #ccc;
     cursor: pointer;
     transition: background-color 1s;
 	padding-left: 10px;
-	line-height: 30px;
+	margin: 0 5px;
+	line-height: 14px;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -123,11 +133,11 @@ main {
 transform:translate(0);
 }
 #btn-2:checked ~ .slider-inner .slider-slides { 
-transform:translate(-670px);
+transform:translate(-680px);
 }
 #btn-3:checked ~ .slider-inner .slider-slides { 
-transform:translate(-1340px);
+transform:translate(-1360px);
 }
 #btn-4:checked ~ .slider-inner .slider-slides { 
-transform:translate(-2010px);
+transform:translate(-2040px);
 }
