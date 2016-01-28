@@ -33,8 +33,13 @@ body {
 	font-weight: bold;
 }
 .contacts {
-	float: right;
-	width: 380px;
+	line-height:24px;
+	font-size: 20px;
+}
+.contacts, .worktime {
+	margin-left: 30px;
+	padding: 10px;
+	box-shadow: 0 0 5px 0 white;
 }
 .main-menu {
 	height: 50px;
