@@ -16,9 +16,21 @@ body {
 	align-items: center;
 }
 .logo {
-	float: left;
-	width: 80px;
-	height: 80px;
+	display: table;
+}
+.logo-text {
+	display: table-cell;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	color: #ccff00;
+	border: 5px solid #ccff00;
+	border-radius: 50%;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: Arial;
+	font-weight: bold;
 }
 .contacts {
 	float: right;
@@ -92,6 +104,8 @@ main {
     background: #ccc;
     cursor: pointer;
     transition: background-color 1s;
+	padding-left: 10px;
+	line-height: 30px;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
