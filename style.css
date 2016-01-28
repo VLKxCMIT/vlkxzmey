@@ -25,7 +25,9 @@ body {
 	width: 380px;
 }
 .main-menu {
-	height: 30px;
+	height: 50px;
+	margin: 10px 0;
+	box-shadow: 0 0 3px 0 white;
 }
 main {
 	display: flex;
@@ -34,7 +36,9 @@ main {
 	width: 670px;
 }
 .page-chat {
-	width: 330px;
+	width: 320px;
+	margin-left: 10px;
+	box-shadow: 0 0 3px 0 white;
 }
 .page-footer {
 	display: flex;
@@ -59,6 +63,7 @@ main {
 
 .slider-inner {
     overflow: hidden;
+	box-shadow: 0 0 3px 0 white;
 }
 
 .slider-slides{
@@ -76,7 +81,8 @@ main {
 .slider-controls {
     width: 100%;
 	position: absolute;
-	top: -30px;
+	top: -50px;
+	right: -10px;
 }
 
 .slider-controls label {
