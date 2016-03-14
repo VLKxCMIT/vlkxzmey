@@ -4,33 +4,45 @@
 		<meta charset="utf-8" />
 		<title>HTML5 VLK site</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<header>
-			<section class="logo"><div class="logo-text">VLK<br>service</div></section>
-			<section class="contacts"><div class="contaktu"><img src="img/life.png">+380938465328</div><hr><div class="contaktu"><img src="img/kyivstar.png">+380979647951</div><hr><div class="contaktu"><img src="img/vk.png"><a href="https://vk.com/vlkxzmey" target="_blank">vk.com/vlkxzmey</a></div></section>
-			<section class="worktime">Понедельник - Пятница 09:00 - 18:00 <br><hr>Суббота 10:00 - 15:00<br><hr>Воскресенье - выходной</section>
-		</header>
-		<section class="mainContent">
+
+		<div class="pageHeader">
+			<div class="logo"><div class="logoText">VLK<br>service</div></div>
+			<div class="contacts">
+				<div><img src="img/life.png"></div><div>+380938465328</div><br>
+				<div><img src="img/kyivstar.png"></div><div>+380979647951</div><br>
+				<div><img src="img/vk.png"></div><div><a href="https://vk.com/vlkxzmey" target="_blank">vk.com/vlkxzmey</a></div>
+			</div>
+			<div class="worktime"><div>Понедельник - Пятница 09:00 - 18:00</div><br><div>Суббота 10:00 - 15:00</div><br><div>Воскресенье - выходной</div></div>
+		</div>
+<!--[if lte IE 8]>
+	<h1 align="center">Дальше страница не загрузиться<br>Обновите Ваш браузер или используйте другой</h1>
+	<script src="js/Stop.js"></script>
+	window.stop();
+<![endif]-->
+		<div class="pageContent">
 			<div class="slider">
 				<input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
                 <input type="radio" id="btn-3" name="toggle">
                 <input type="radio" id="btn-4" name="toggle">
 				<input type="radio" id="btn-5" name="toggle">
+				<input type="radio" id="btn-6" name="toggle">
                 <div class="slider-controls">
-                    <label for="btn-1">Ремонт ПК</label>
-                    <label for="btn-2">Ремонт ноутбуков</label>
-                    <label for="btn-3">Ремонт телефонов и планшетов</label>
-                    <label for="btn-4">Список тэгов</label>
+                    <label for="btn-1" onclick="slideHeight()"><div>Ремонт ПК</div></label>
+                    <label for="btn-2" onclick="slideHeight()"><div>Ремонт ноутбуков</div></label>
+                    <label for="btn-3"><div>Ремонт телефонов и планшетов</div></label>
+                    <label for="btn-4"><div>Список тэгов</div></label>
+                    <label for="btn-5"><div>дополнительная</div></label>
+                    <label for="btn-6"><div>дополнительная2</div></label>
                 </div>
                 <div class="slider-inner">
                 	<div class="slider-slides">
                 		<div class="slide">
-                			<div class="slide-content">
-<h2>Ремонт компьютеров</h2>
+                			<div class="slide-content" id="slideHeight">
+<h2 onclick="countRabbits()">Ремонт компьютеров</h2>
 <p>Если у Вас поломался компьютер и Вам нужен оперативный, быстрый ремонт компьютеров в Харькове,<br> то Вы обратились по адресу. Техномастер предлагает ремонт компьютеров любой сложности с гарантией на свою работу. Вы можете привезти компьютер в сервисный центр, так и вызвать мастера по ремонту компьютеров домой.</p>
 <p>Ремонт пк любой сложности по низкой цене в Харькове</p>
 <div class="textCenter">какой то текст посередине</div><br><hr>
@@ -51,8 +63,8 @@
                 			<div class="slide-content">
 <h2>Ремонт ноутбуков Харьков</h2>
 <p>Ваш ноутбук не включается, перегревается и не  выводит изображение на экран? На экране образовалась трещина или по каким-то иным причинам Вы хотите его отдать в ремонт?! Обращайтесь в Техномастер и мы произведем ремонт ноутбука в максимально сжатые сроки. Ремонт ноутбуков в Харькове довольно распространенная вещь. Сейчас делового человека или простого студента сложно представить без ноутбука, поэтому поломка ноутбука всегда оборачивается дополнительными неудобствами или денежными затратами. Многие хотят максимально быстро отремонтировать свой ноутбук, поэтому Техномастер предлагает срочный ремонт ноутбуков в Харькове: как в нашем сервисном центре, так и с выездом к Вам домой, поэтому позвонив нам, Вы можете заказать ремонт ноутбука на дому. Техномастер предлагает ремонт ноутбука в сервисном центре и на дому в Харькове.</p>
-<img src="https://pp.vk.me/c624828/v624828918/c9b3/X2j8Amhstq0.jpg" width="480px" align="left">
-<img src="http://home-internet.com.ua/wp-content/themes/homeinternet/img/50.png" width="80px" align="left">
+<img src="img/kyivstar.png" width="480px" align="left">
+<img src="img/life.png" width="80px" align="left">
 
 <p>Многие задаются вопросом - сколько стоит ремонт ноутбука?! Цена на ремонт ноутбука зависит от серьезности проблемы, а точную цифру можно сказать после первого осмотра или проведения диагностики. В целом весь спектр данной услуги, ремонт ноутбука Харьков,  можно разделить на несколько основных составляющих: диагностика ноутбука, ремонт питания, аккумулятора ноутбука, зарядки, клавиатуры, корпуса и матрицы ноутбука. Соответственно и стоимость ремонта ноутбука будет зависеть от проблемы, ведь, как Вы понимаете, ремонт зарядки ноутбука не может стоить как ремонт матрицы ноутбука.</p>
                 			</div>
@@ -80,12 +92,33 @@
 Высота слайда регулируеться в style.css в коментах все описано</p>
                 			</div>
                 		</div>
+                		<div class="slide">
+                			<div class="slide-content">
+<h2>список тэгов</h2>
+<p>&lt;br&gt; - перенос строки<br>
+&lt;hr&gt; - горизонтальная полоса на всю ширину строки<br>
+&lt;div class="textCenter"&gt;какой то текст/объект&lt;/div&gt;<br>
+&lt;img src="url" width="480px" align="left"&gt; - вставка картинки с шириной 480px и выравниванием по левому краю<br>
+Высота слайда регулируеться в style.css в коментах все описано</p>
+                			</div>
+                		</div>
+                		<div class="slide">
+                			<div class="slide-content">
+<h2>список тэгов</h2>
+<p>&lt;br&gt; - перенос строки<br>
+&lt;hr&gt; - горизонтальная полоса на всю ширину строки<br>
+&lt;div class="textCenter"&gt;какой то текст/объект&lt;/div&gt;<br>
+&lt;img src="url" width="480px" align="left"&gt; - вставка картинки с шириной 480px и выравниванием по левому краю<br>
+Высота слайда регулируеться в style.css в коментах все описано</p>
+                			</div>
+                		</div>
                 	</div>
                 </div>
 			</div>
-		</section>
-		<footer class="page-footer">
-			<section class="info">Vyacheslav, VLKxSERVICE.inf.ua</section>
-		</footer>
+		</div>
+		<div class="pageFooter">
+			<div class="info">Vyacheslav, VLKxSERVICE.inf.ua</div>
+		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

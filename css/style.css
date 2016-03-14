@@ -1,0 +1,167 @@
+html {
+	overflow-y: scroll;
+}
+body {
+	margin: 0;
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e899 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e5e899 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e5e899 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e899', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+	background-repeat: repeat-x;
+}
+/* HEADER START */
+.pageHeader {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 800px;
+}
+.pageHeader > div {
+	display: inline-block;
+	text-align: left;
+	line-height: 30px;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+.pageHeader .logo {
+	background-color: black;
+	border: 5px solid #ccff00;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.logo .logoText {
+	color: #ccff00;
+	font-size: 24px;
+	font-family: Arial;
+	font-weight: bold;
+	margin-top: 16px;
+	text-align: center;
+}
+.contacts > div, .worktime > div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.contacts > div > img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+/* HEADER END */
+.pageContent {
+	width: 800px;
+	margin: 0 auto;
+}
+/* carousel start */
+.slider {
+	width: 800px;
+}
+.slider input[type=radio] {
+    display: none;
+}
+.slider-controls label {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	box-shadow: 0 0 3px #5f5f5f;
+    background: #cece00;
+    border-radius: 7px;
+    border: 1px solid #5f5f5f;
+    cursor: pointer;
+    transition: background-color 1s;
+	padding: 0 10px;
+	margin: 3px;
+	font-weight: bold;
+}
+.slider-controls div {
+	display: table-cell;
+	height: 36px;
+	vertical-align: middle;
+}
+.slider-inner {
+	width: 800px;
+    overflow: hidden;
+}
+.slider-slides {
+	display: flex;
+    width: 400%;
+    height: 1500px; /* стандартная величина первого слайда который грузиться по умолчанию */
+	-webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
+	-moz-transition: all 1s cubic-bezier(1, 0, 0, 1);
+	-o-transition: all 1s cubic-bezier(1, 0, 0, 1);
+	transition:         all 1s cubic-bezier(1, 0, 0, 1);
+}
+.slide {
+    width: 800px;
+}
+.slide-content {
+	width: 780px;
+	padding: 10px;
+	white-space: pre-wrap;
+}
+.slide-content img {
+	border: 2px solid #5f5f5f;
+	border-radius: 15px;
+	margin: 10px;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"],
+#btn-5:checked ~ .slider-controls label[for="btn-5"],
+#btn-6:checked ~ .slider-controls label[for="btn-6"] { 
+    background-color: transparent;
+}
+#btn-1:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(0); /* Для Firefox */
+    -ms-transform: translate(0); /* Для IE */
+    -webkit-transform: translate(0); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0); /* Для Opera */
+    transform: translate(0); /* висота по умолчанию */
+}
+#btn-2:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-800px); /* Для Firefox */
+    -ms-transform: translate(-800px); /* Для IE */
+    -webkit-transform: translate(-800px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-800px); /* Для Opera */
+    transform: translate(-800px); /* висота по умолчанию */
+	height: 700px; /* высота 2го блока */
+}
+#btn-3:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-1600px); /* Для Firefox */
+    -ms-transform: translate(-1600px); /* Для IE */
+    -webkit-transform: translate(-1600px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-1600px); /* Для Opera */
+    transform: translate(-1600px); /* висота по умолчанию */
+	height: 900px; /* высота 3го блока */
+}
+#btn-4:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-2400px); /* Для Firefox */
+    -ms-transform: translate(-2400px); /* Для IE */
+    -webkit-transform: translate(-2400px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-2400px); /* Для Opera */
+    transform: translate(-2400px); /* висота по умолчанию */
+	height: 350px; /* высота 4го блока */
+}
+#btn-5:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-3200px); /* Для Firefox */
+    -ms-transform: translate(-3200px); /* Для IE */
+    -webkit-transform: translate(-3200px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-3200px); /* Для Opera */
+    transform: translate(-3200px); /* висота по умолчанию */
+	height: 150px; /* высота 5го блока */
+}
+#btn-6:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-4000px); /* Для Firefox */
+    -ms-transform: translate(-4000px); /* Для IE */
+    -webkit-transform: translate(-4000px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-4000px); /* Для Opera */
+    transform: translate(-4000px); /* висота по умолчанию */
+	height: 550px; /* высота 5го блока */
+}
+/* carousel end */
+.pageFooter {
+	text-align: center;
+}
+.pageFooter .info {
+	font-family: ARIAL;
+}
