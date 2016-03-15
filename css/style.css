@@ -87,7 +87,7 @@ body {
 }
 .slider-slides {
 	display: block;
-    width: 600%;
+    width: 700%;
     -webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
 	-moz-transition: all 1s cubic-bezier(1, 0, 0, 1);
 	-o-transition: all 1s cubic-bezier(1, 0, 0, 1);
@@ -112,7 +112,8 @@ body {
 #btn-3:checked ~ .slider-controls label[for="btn-3"],
 #btn-4:checked ~ .slider-controls label[for="btn-4"],
 #btn-5:checked ~ .slider-controls label[for="btn-5"],
-#btn-6:checked ~ .slider-controls label[for="btn-6"] { 
+#btn-6:checked ~ .slider-controls label[for="btn-6"],
+#btn-7:checked ~ .slider-controls label[for="btn-7"] { 
     background-color: transparent;
 }
 #btn-1:checked ~ .slider-inner .slider-slides { 
@@ -120,42 +121,49 @@ body {
     -ms-transform: translate(0); /* Для IE */
     -webkit-transform: translate(0); /* Для Safari, Chrome, iOS */
     -o-transform: translate(0); /* Для Opera */
-    transform: translate(0); /* висота по умолчанию */
+    transform: translate(0);
 }
 #btn-2:checked ~ .slider-inner .slider-slides { 
     -moz-transform: translate(-800px); /* Для Firefox */
     -ms-transform: translate(-800px); /* Для IE */
     -webkit-transform: translate(-800px); /* Для Safari, Chrome, iOS */
     -o-transform: translate(-800px); /* Для Opera */
-    transform: translate(-800px); /* висота по умолчанию */
+    transform: translate(-800px);
 }
 #btn-3:checked ~ .slider-inner .slider-slides { 
     -moz-transform: translate(-1600px); /* Для Firefox */
     -ms-transform: translate(-1600px); /* Для IE */
     -webkit-transform: translate(-1600px); /* Для Safari, Chrome, iOS */
     -o-transform: translate(-1600px); /* Для Opera */
-    transform: translate(-1600px); /* висота по умолчанию */
+    transform: translate(-1600px);
 }
 #btn-4:checked ~ .slider-inner .slider-slides { 
     -moz-transform: translate(-2400px); /* Для Firefox */
     -ms-transform: translate(-2400px); /* Для IE */
     -webkit-transform: translate(-2400px); /* Для Safari, Chrome, iOS */
     -o-transform: translate(-2400px); /* Для Opera */
-    transform: translate(-2400px); /* висота по умолчанию */
+    transform: translate(-2400px);
 }
 #btn-5:checked ~ .slider-inner .slider-slides { 
     -moz-transform: translate(-3200px); /* Для Firefox */
     -ms-transform: translate(-3200px); /* Для IE */
     -webkit-transform: translate(-3200px); /* Для Safari, Chrome, iOS */
     -o-transform: translate(-3200px); /* Для Opera */
-    transform: translate(-3200px); /* висота по умолчанию */
+    transform: translate(-3200px);
 }
 #btn-6:checked ~ .slider-inner .slider-slides { 
     -moz-transform: translate(-4000px); /* Для Firefox */
     -ms-transform: translate(-4000px); /* Для IE */
     -webkit-transform: translate(-4000px); /* Для Safari, Chrome, iOS */
     -o-transform: translate(-4000px); /* Для Opera */
-    transform: translate(-4000px); /* висота по умолчанию */
+    transform: translate(-4000px);
+}
+#btn-7:checked ~ .slider-inner .slider-slides { 
+    -moz-transform: translate(-4800px); /* Для Firefox */
+    -ms-transform: translate(-4800px); /* Для IE */
+    -webkit-transform: translate(-4800px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-4800px); /* Для Opera */
+    transform: translate(-4800px);
 }
 /* carousel end */
 .pageFooter {
@@ -163,4 +171,9 @@ body {
 }
 .pageFooter .info {
 	font-family: ARIAL;
+}
+/* центровка текста */
+.textCenter {
+	width: 100%;
+	text-align: center;
 }
