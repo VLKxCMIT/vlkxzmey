@@ -1,6 +1,7 @@
+var firstHeight = document.getElementById('slide-1').offsetHeight;
+document.getElementById('slideViewer').style.height = firstHeight + 'px';
 
-function slideHeight() {
-	var getSlide = document.getElementsByClassName('slide-content');
-	var sH = getSlide.clientWidth || getSlide.offsetWidth;
-	alert(sH);
+function sliderHeight(sl) {
+	var offsetHeight = document.getElementById(sl).offsetHeight;
+	document.getElementById('slideViewer').style.height = offsetHeight + 'px';
 }
